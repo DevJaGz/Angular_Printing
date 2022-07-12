@@ -1,0 +1,53 @@
+<div>
+  <h1 class="m-3">TESTING NGX-PRINT </h1>
+  <button printSectionId="mytodosItemsId" ngxPrint class="btn btn-primary m-3" [useExistingCss]="true">Print</button>
+  <div id="mytodosItemsId">
+    <div class="row" class="print-container">
+      <div class="col-12">
+        <div class="card m-3" *ngFor="let i of [1,2,3,4,5,6,7,8,9,10]">
+          <div class="card-body">
+            <div class="card-title">My Card {{i}}</div>
+            <div>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae soluta iusto magni molestiae possimus
+              voluptates veniam nostrum, illum temporibus voluptatum minus dignissimos odio amet pariatur alias
+              sequi officia harum eius.
+              <div class="table-{{i}}">
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th scope="col">#</th>
+                      <th scope="col">First</th>
+                      <th scope="col">Last</th>
+                      <th scope="col">Handle</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">1</th>
+                      <td>Mark</td>
+                      <td>Otto</td>
+                      <td>@mdo</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">2</th>
+                      <td>Jacob</td>
+                      <td>Thornton</td>
+                      <td>@fat</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">3</th>
+                      <td>Larry</td>
+                      <td>the Bird</td>
+                      <td>@twitter</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

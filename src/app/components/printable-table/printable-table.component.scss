@@ -1,0 +1,53 @@
+/* You can add global styles to this file, and also import other style files */
+:host{
+
+  @media print {
+    * {
+      visibility: visible !important;
+    }
+    html, body{
+      visibility: visible !important;
+    }
+
+    // ::ng-deep{
+    //   .card{
+    //       break-inside: avoid-page !important;
+    //   }
+    // }
+  }
+  ::ng-deep {
+    th{
+      color: red
+    }
+    .card {
+      outline: 2px solid red;
+    }
+    // .table-container .card:not(.card:first-of-type){
+    //   display: none;
+    //  }
+  }
+
+
+}
+
+.print-container{
+  margin: 0.5cm;
+  border: 1px solid black !important;
+  border-radius: 4px;
+  padding: 1rem ;
+
+  .content{
+    outline: 1px solid green;
+    widows:0;
+  }
+}
+
+body
+{
+  margin: 25mm 25mm 25mm 25mm !important;
+}
+
+@page{
+  margin: 0;
+  size: auto;
+}

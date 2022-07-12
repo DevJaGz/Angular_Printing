@@ -1,0 +1,16 @@
+@media print {
+ * {
+    visibility: hidden;
+  }
+  app-printable-table, app-printable-table * {
+    visibility: visible;
+  }
+
+}
+
+app-printable-table{
+  visibility: hidden;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
